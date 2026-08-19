@@ -1,12 +1,14 @@
 [project]
 name = "python-api"
 version = "0.1.0"
-description = "Add your description here"
+description = "FastAPI application"
 readme = "README.md"
+requires-python = ">=3.12"
+
 authors = [
     { name = "aysombath", email = "aysombath@gmail.com" }
 ]
-requires-python = ">=3.12"
+
 dependencies = [
     "asyncpg>=0.31.0",
     "bcrypt>=5.0.0",
@@ -18,7 +20,7 @@ dependencies = [
 ]
 
 [project.scripts]
-python-api = "python_api:main"
+python-api = "python_api.main:app"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
