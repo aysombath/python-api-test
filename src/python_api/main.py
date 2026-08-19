@@ -27,6 +27,9 @@ app.include_router(role_permissions_router)
 def read_root() -> dict[str, str]:
     return {"message": "Hello from python-api!"}
 
+@app.get("/healthz")
+async def healthz():
+    return {"status": "ok"}
 
 @app.get("/health")
 def health() -> dict[str, str]:
