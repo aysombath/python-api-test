@@ -30,7 +30,3 @@ def read_root() -> dict[str, str]:
 @app.get("/healthz")
 async def healthz():
     return {"status": "ok"}
-
-@app.get("/health")
-def health() -> dict[str, str]:
-    return {"status": "ok"}
