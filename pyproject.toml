@@ -19,8 +19,11 @@ dependencies = [
     "sqlmodel>=0.0.39",
 ]
 
-[project.scripts] 
+[project.scripts]
 python-api = "python_api:main"
+
+[tool.fastapi]
+entrypoint = "main:app"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
